@@ -1,0 +1,9 @@
+[submodule "source/lodepng"]
+	path = source/lodepng
+	url = https://github.com/lvandeve/lodepng
+[submodule "source/IndexPSP"]
+	path = source/IndexPSP
+	url = https://github.com/AraAra064/IndexPSP
+[submodule "source/BLC"]
+	path = source/BLC
+	url = https://github.com/AraAra064/BLC
