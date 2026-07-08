@@ -22,6 +22,20 @@ std::vector<uint8_t> LoadFile(std::string fileName)
 	return retVal;
 }
 
+bool MakeFile(std::string fileName, std::vector<uint8_t> &data)
+{
+	bool retVal;
+	std::ofstream writeFile(fileName.c_str(), std::ios::binary);
+
+	if ((retVal = writeFile.is_open()))
+	{
+		writeFile.write((char*)data.data(), data.size());
+		writeFile.close();
+	}
+
+	return retVal;
+}
+
 bool LoadPNG(cg::Image& image, std::string fileName)
 {
 	std::vector<uint8_t> pixelData;
